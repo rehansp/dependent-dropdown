@@ -32,6 +32,7 @@ $(document).ready(function() {
       "&callback=?";
     $.getJSON(url, function(data) {
       $("#region option").remove();
+      $("#city option").remove();
       $('#region').append('<option value="">Please select your region</option>');
       $.each(data, function(index, value) {
         // APPEND OR INSERT DATA TO SELECT ELEMENT.
